@@ -25,6 +25,94 @@ const vueRouter = new Router({
                 title: '我的顾客'
             },
             component: resolve => require(['@/views/my-customer'], resolve) // 路由懒加载
+        },
+        {
+            path: '/myTeam',
+            name: 'myTeam',
+            meta: {
+                title: '我的团队'
+            },
+            component: resolve => require(['@/views/my-team/my-team'], resolve) // 路由懒加载
+        },
+        {
+            path: '/presentation',
+            name: 'presentation',
+            meta: {
+                title: '提现'
+            },
+            component: resolve => require(['@/views/presentation/presentation'], resolve) // 路由懒加载
+        },
+        {
+            path: '/invitation',
+            name: 'invitation',
+            meta: {
+                title: '邀请注册'
+            },
+            component: resolve => require(['@/views/invitation/invitation'], resolve) // 路由懒加载
+        },
+        {
+            path: '/mySecond',
+            name: 'mySecond',
+            meta: {
+                title: '我的团队'
+            },
+            component: resolve => require(['@/views/my-second/my-second'], resolve) // 路由懒加载
+        },
+        {
+            path: '/myOrder',
+            name: 'myOrder',
+            meta: {
+                title: '我的订单'
+            },
+            component: resolve => require(['@/views/my-order/my-order'], resolve) // 路由懒加载
+        },
+        {
+            path: '/address',
+            name: 'address',
+            meta: {
+                title: '新增地址'
+            },
+            component: resolve => require(['@/views/address/address'], resolve) // 路由懒加载
+        },
+        {
+            path: '/settlement',
+            name: 'settlement',
+            meta: {
+                title: '结算详情'
+            },
+            component: resolve => require(['@/views/settlement/settlement'], resolve) // 路由懒加载
+        },
+        {
+            path: '/register',
+            name: 'register',
+            meta: {
+                title: '注册'
+            },
+            component: resolve => require(['@/views/register/register'], resolve) // 路由懒加载
+        },
+        {
+            path: '/aboutUs',
+            name: 'aboutUs',
+            meta: {
+                title: '关于我们'
+            },
+            component: resolve => require(['@/views/about-us/about-us'], resolve) // 路由懒加载
+        },
+        {
+            path: '/forget',
+            name: 'forget',
+            meta: {
+                title: '忘记密码'
+            },
+            component: resolve => require(['@/views/forget/forget'], resolve) // 路由懒加载
+        },
+        {
+            path: '/login',
+            name: 'login',
+            meta: {
+                title: '登录'
+            },
+            component: resolve => require(['@/views/login/login'], resolve) // 路由懒加载
         }
     ]
 });
