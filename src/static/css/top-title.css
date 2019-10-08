@@ -1,0 +1,16 @@
+.top-title-warp{
+  background: #ffffff;
+  text-align: center;
+}
+.top-title{
+  color: #D02D28;
+  font-size: 36px;
+  padding-top: 45px;
+  line-height: 46px;
+  padding-bottom: 36px;
+}
+.top-content{
+  font-size: 30px;
+  color: #333333;
+  padding-bottom: 32px;
+}

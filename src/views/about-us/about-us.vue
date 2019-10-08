@@ -29,6 +29,9 @@ export default {
 };
 </script>
 <style land="scss">
+  .about-us-main{
+    padding-top: 88px;
+  }
   .about-us-img{
     width: 100%;
   }

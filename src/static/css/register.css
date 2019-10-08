@@ -1,13 +1,21 @@
 .register-warp{
   width: 90vw;
   margin: 0 auto;
-  padding-top: 218px;
+  padding-top: 114px;
 }
 .register-warp .user-input-warp{
   position: relative;
   margin-bottom: 20px;
 }
 .register-main .user-input-warp .iconfont{
+  font-size: 30px;
+  color: #999999;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+}
+.forget-main .user-input-warp .iconfont{
   font-size: 30px;
   color: #999999;
   position: absolute;

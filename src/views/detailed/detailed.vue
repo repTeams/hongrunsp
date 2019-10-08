@@ -10,6 +10,17 @@
         <div class="top-content">直推台数</div>
       </li>
     </ul>
+    <ul class="people-warp box" v-for="item in 2" :key="item">
+      <li>
+        <img src="../../static/img/customer-icon.png" alt="">
+      </li>
+      <li class="perple-content">
+        <div class="perple-content-item perple-content-title">用户账号：15712074625</div>
+        <div class="perple-content-item">用户等级：4级</div>
+        <div class="perple-content-item">团队详细：15人/12台</div>
+        <div class="perple-content-item">加入时间：2019/08/04 12:00</div>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -28,25 +39,30 @@ export default {
 };
 </script>
 <style land="scss">
+  @import "../../static/css/top-title.css";
   .detailed-main{
     background: #F2F2F2;
     min-height: 100vh;
     padding: 0 23px 0 27px;
+    padding-top: 142px;
   }
-  .top-title-warp{
+  .people-warp{
+    padding: 50px 38px 50px;
     background: #ffffff;
-    text-align: center;
+    margin-top: 41px;
+    border-radius: 6Px;
+    align-items: center;
   }
-  .top-title{
-    color: #D02D28;
-    font-size: 36px;
-    padding-top: 45px;
-    line-height: 46px;
-    padding-bottom: 36px;
+  .perple-content{
+    margin-left: 38px;
   }
-  .top-content{
-    font-size: 30px;
+  .perple-content-item{
+    margin-bottom: 12px;
+    color: #999999;
+    font-size: 24px;
+  }
+  .perple-content-title{
+    font-size: 26px;
     color: #333333;
-    padding-bottom: 32px;
   }
 </style>

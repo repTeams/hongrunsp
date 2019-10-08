@@ -12,7 +12,7 @@
       <li class="user-input-warp">
         <span class="register-tips">收货地址</span>
         <input class="user-input" type="text" placeholder="请输入收货地址">
-        <i class="iconcode iconfont"></i>
+        <i class="iconright iconfont"></i>
       </li>
       <li class="user-input-warp">
         <span class="register-tips">详细地址</span>
