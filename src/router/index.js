@@ -120,6 +120,14 @@ const vueRouter = new Router({
                 title: '登录'
             },
             component: resolve => require(['@/views/login/login'], resolve) // 路由懒加载
+        },
+        {
+            path: '/detailed',
+            name: 'detailed',
+            meta: {
+                title: '团队明细'
+            },
+            component: resolve => require(['@/views/detailed/detailed'], resolve) // 路由懒加载
         }
     ]
 });

@@ -1,6 +1,27 @@
 <template>
-  <div class="hello">
-    <h1>我这里我的地址新增的啦</h1>
+  <div class="address-main">
+    <ul class="register-warp">
+      <li class="user-input-warp">
+        <span class="register-tips">收货人</span>
+        <input class="user-input" type="text" placeholder="请输入收货人">
+      </li>
+      <li class="user-input-warp">
+        <span class="register-tips">电话号码</span>
+        <input class="user-input" type="text" placeholder="请输入电话号码">
+      </li>
+      <li class="user-input-warp">
+        <span class="register-tips">收货地址</span>
+        <input class="user-input" type="text" placeholder="请输入收货地址">
+        <i class="iconcode iconfont"></i>
+      </li>
+      <li class="user-input-warp">
+        <span class="register-tips">详细地址</span>
+        <input class="user-input" type="text" placeholder="请输入详细地址">
+      </li>
+      <li class="register-btn">
+        确定
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -19,7 +40,21 @@ export default {
 };
 </script>
 <style land="scss">
-  .active-block{
-    padding:10px;
+  @import "../../static/css/register.css";
+  .address-main .user-input{
+    text-indent: 120px;
+  }
+  .address-main .register-warp .user-input-warp .iconfont{
+    position: absolute;
+    right: 0;
+    line-height: 80px;
+    font-size: 28px;
+  }
+  .register-tips{
+    position: absolute;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
   }
 </style>
