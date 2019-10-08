@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfloat::after {
+    display: block;
+    content: '';
+    clear: both;
+}

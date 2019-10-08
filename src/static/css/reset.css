@@ -1,0 +1,197 @@
+html {
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-align: left;
+}
+
+select {
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+fieldset,
+img {
+    border: 0 none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset p {
+    margin: 0;
+    padding: 0 0 0 8px;
+}
+
+legend {
+    display: none;
+}
+
+address,
+caption,
+em,
+strong,
+th,
+i {
+    font-style: normal;
+    font-weight: 400;
+}
+
+table caption {
+    margin-left: -1px;
+}
+
+hr {
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #E4E4E4;
+    border-width: 1px 0;
+    clear: both;
+    height: 2px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+ol,
+ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: ””;
+}
+
+
+/* 基础样式类名 */
+
+.gray {
+    background: #cccccc !important;
+    color: #ffffff !important;
+}
+
+.gray:hover {
+    border-color: #cccccc !important;
+}
+
+.box {
+    display: flex;
+    display: -ms-flexbox
+}
+
+.flex {
+    -ms-flex: 1;
+    flex: 1
+}
+
+.hide {
+    display: none !important;
+}
+
+.fr {
+    float: right !important;
+}
+
+.hover-block {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-block:hover {
+    -webkit-box-shadow: 0 0 8px #dedede;
+    box-shadow: 0 0 8px #dedede;
+    left: 1px;
+    top: 1px;
+}
+
+.active-block {
+    position: relative;
+    cursor: pointer;
+}
+
+.active-block:hover {
+    color: #F29232 !important;
+}
+
+.hover-block-bg:hover {
+    background: #F29232 !important;
+    color: #ffffff !important;
+    cursor: pointer;
+}
+
+.hover-block-bg:hover .iconfont {
+    color: #ffffff !important;
+}
+
+.el-button:focus,
+.el-button:hover {
+    color: #ffffff;
+    border-color: #F29232;
+    background-color: #F29232;
+}
+
+
+/* 过渡动画 */
+
+.transition-class {
+    transition: 0.35s;
+    ;
+}
+
+
+/* 超出省略号 */
+
+.beyond {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
