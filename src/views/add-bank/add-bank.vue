@@ -1,12 +1,12 @@
 <template>
   <div class="hello">
-    <h1>我这里是我的团队2的啦</h1>
+    <h1>我这里添加银行卡</h1>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'my-second-team',
+    name: 'addBank',
     data () {
         return {};
     },
