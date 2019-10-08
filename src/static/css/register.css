@@ -1,0 +1,48 @@
+.register-warp{
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 218px;
+}
+.register-warp .user-input-warp{
+  position: relative;
+  margin-bottom: 20px;
+}
+.register-main .user-input-warp .iconfont{
+  font-size: 30px;
+  color: #999999;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+}
+.register-warp input:focus{
+  outline: none;
+}
+.register-warp .user-input{
+  line-height: 80px;
+  width: 100%;
+  border:0;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 24px;
+}
+.register-warp .get-code{
+  color: #D02D28;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.register-btn{
+  width: 90%;
+  margin: 0 auto;
+  background: #D02D28;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  margin-top: 50px;
+  font-size: 29px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}

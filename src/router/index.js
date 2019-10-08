@@ -54,7 +54,7 @@ const vueRouter = new Router({
             path: '/addBank',
             name: 'addBank',
             meta: {
-                title: '我的团队'
+                title: '添加银行卡'
             },
             component: resolve => require(['@/views/add-bank/add-bank'], resolve) // 路由懒加载
         },
@@ -113,6 +113,14 @@ const vueRouter = new Router({
                 title: '登录'
             },
             component: resolve => require(['@/views/login/login'], resolve) // 路由懒加载
+        },
+        {
+            path: '/detailed',
+            name: 'detailed',
+            meta: {
+                title: '团队明细'
+            },
+            component: resolve => require(['@/views/detailed/detailed'], resolve) // 路由懒加载
         }
     ]
 });
