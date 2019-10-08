@@ -1,22 +1,62 @@
 <!--
  * @Date: 2019-10-08 23:05:45
  * @LastEditors: fashandian
- * @LastEditTime: 2019-10-08 23:55:29
+ * @LastEditTime: 2019-10-09 00:33:56
  -->
 <template>
-    <div>
-        <section class="msg-title-container padding">
+    <div class="container">
+        <section class="title-container">
             <span>客户信息</span>
             <span>TA的消费订单/金额</span>
         </section>
-        <ul class="msg-content-container padding">
+        <ul class="content-container">
             <li>
-                <div>
-                    <img src="../assets/logo.png" alt="客户头像">
-                    <p>
-                        <span>客户001</span>
-                        <span>2018-08-20 10:06:30</span>
-                    </p>
+                <div class="customer-msg-wrap">
+                    <img src="../static/img/customer-icon.png" alt="客户头像">
+                    <div>
+                        <p class="name">客户001</p>
+                        <p class="time">2018-08-20 10:06:30</p>
+                    </div>
+                </div>
+                <p>3个/88元</p>
+            </li>
+            <li>
+                <div class="customer-msg-wrap">
+                    <img src="../static/img/customer-icon.png" alt="客户头像">
+                    <div>
+                        <p class="name">客户001</p>
+                        <p class="time">2018-08-20 10:06:30</p>
+                    </div>
+                </div>
+                <p>3个/88元</p>
+            </li>
+            <li>
+                <div class="customer-msg-wrap">
+                    <img src="../static/img/customer-icon.png" alt="客户头像">
+                    <div>
+                        <p class="name">客户001</p>
+                        <p class="time">2018-08-20 10:06:30</p>
+                    </div>
+                </div>
+                <p>3个/88元</p>
+            </li>
+            <li>
+                <div class="customer-msg-wrap">
+                    <img src="../static/img/customer-icon.png" alt="客户头像">
+                    <div>
+                        <p class="name">客户001</p>
+                        <p class="time">2018-08-20 10:06:30</p>
+                    </div>
+                </div>
+                <p>3个/88元</p>
+            </li>
+            <li>
+                <div class="customer-msg-wrap">
+                    <img src="../static/img/customer-icon.png" alt="客户头像">
+                    <div>
+                        <p class="name">客户001</p>
+                        <p class="time">2018-08-20 10:06:30</p>
+                    </div>
                 </div>
                 <p>3个/88元</p>
             </li>
@@ -37,30 +77,49 @@ export default {
 </script>
 
 <style lang="scss">
-    .padding {
-        padding: 0.2rem 0.4rem;
+    .container {
+        background: #f6f6f6;
+        height: 100vh;
     }
-    .msg-title-container {
+    .title-container {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
+        background: #fff;
+        padding: 0.2rem 0.4rem;
         span:last-child {
             color:#bebebe;
         }
     }
-    .msg-content-container {
+    .content-container {
+        background: #fff;
+        padding: 0 0.4rem;
         li {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-top: 1px solid #f7f7f7;
+            padding: 0.3rem 0;
             > p {
                 color: #f37a7a;
             }
         }
-        p {
-            span {
+        .customer-msg-wrap {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+                border-radius: 50%;
+                margin-right: 0.4rem;
+                width: 100px;
+                height: 100px;
+            }
+            .time {
                 color: #cbcbcb;
             }
+        }
+        p {
+
         }
     }
 </style>
