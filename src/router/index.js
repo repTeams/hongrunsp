@@ -1,7 +1,7 @@
 /*
  * @Date: 2019-08-26 23:27:34
  * @LastEditors: fashandian
- * @LastEditTime: 2019-10-08 22:55:44
+ * @LastEditTime: 2019-10-09 01:51:38
  */
 import Vue from 'vue';
 import Router from 'vue-router';
@@ -40,7 +40,8 @@ const vueRouter = new Router({
             meta: {
                 title: '提现'
             },
-            component: resolve => require(['@/views/presentation/presentation'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/presentation/presentation'], resolve) // 路由懒加载
         },
         {
             path: '/invitation',
@@ -48,15 +49,17 @@ const vueRouter = new Router({
             meta: {
                 title: '邀请注册'
             },
-            component: resolve => require(['@/views/invitation/invitation'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/invitation/invitation'], resolve) // 路由懒加载
         },
         {
             path: '/addBank',
             name: 'addBank',
             meta: {
-                title: '我的团队'
+                title: '添加银行卡'
             },
-            component: resolve => require(['@/views/add-bank/add-bank'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/add-bank/add-bank'], resolve) // 路由懒加载
         },
         {
             path: '/myOrder',
@@ -64,7 +67,8 @@ const vueRouter = new Router({
             meta: {
                 title: '我的订单'
             },
-            component: resolve => require(['@/views/my-order/my-order'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/my-order/my-order'], resolve) // 路由懒加载
         },
         {
             path: '/address',
@@ -80,7 +84,8 @@ const vueRouter = new Router({
             meta: {
                 title: '结算详情'
             },
-            component: resolve => require(['@/views/settlement/settlement'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/settlement/settlement'], resolve) // 路由懒加载
         },
         {
             path: '/register',
@@ -88,7 +93,8 @@ const vueRouter = new Router({
             meta: {
                 title: '注册'
             },
-            component: resolve => require(['@/views/register/register'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/register/register'], resolve) // 路由懒加载
         },
         {
             path: '/aboutUs',
@@ -96,7 +102,8 @@ const vueRouter = new Router({
             meta: {
                 title: '关于我们'
             },
-            component: resolve => require(['@/views/about-us/about-us'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/about-us/about-us'], resolve) // 路由懒加载
         },
         {
             path: '/forget',

@@ -1,10 +1,10 @@
 <!--
  * @Date: 2019-10-08 23:05:45
  * @LastEditors: fashandian
- * @LastEditTime: 2019-10-09 00:33:56
+ * @LastEditTime: 2019-10-09 00:55:07
  -->
 <template>
-    <div class="container">
+    <div class="my-customer-container">
         <section class="title-container">
             <span>客户信息</span>
             <span>TA的消费订单/金额</span>
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .container {
+    .my-customer- {
         background: #f6f6f6;
         height: 100vh;
     }
