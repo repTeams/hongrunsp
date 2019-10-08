@@ -1,3 +1,8 @@
+<!--
+ * @Date: 2019-10-09 00:01:50
+ * @LastEditors: fashandian
+ * @LastEditTime: 2019-10-09 00:01:50
+ -->
 <template>
   <div class="address-main">
     <ul class="register-warp">

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2019-10-08 23:05:45
  * @LastEditors: fashandian
- * @LastEditTime: 2019-10-09 00:55:07
+ * @LastEditTime: 2019-10-09 05:12:42
  -->
 <template>
     <div class="my-customer-container">
@@ -77,9 +77,8 @@ export default {
 </script>
 
 <style lang="scss">
-    .my-customer- {
+    .my-customer-container {
         background: #f6f6f6;
-        height: 100vh;
     }
     .title-container {
         display: flex;

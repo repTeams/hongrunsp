@@ -23,7 +23,6 @@ export default {
 <style lang="scss">
     .invitation-container {
         background: #f6f6f6;
-        height: 100vh;
         .code-wrap {
             position: absolute;
             left: 50%;

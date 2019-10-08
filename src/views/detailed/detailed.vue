@@ -1,3 +1,8 @@
+<!--
+ * @Date: 2019-10-09 01:57:57
+ * @LastEditors: fashandian
+ * @LastEditTime: 2019-10-09 05:28:03
+ -->
 <template>
   <div class="detailed-main">
     <ul class="box top-title-warp">
@@ -42,9 +47,8 @@ export default {
   @import "../../static/css/top-title.css";
   .detailed-main{
     background: #F2F2F2;
-    min-height: 100vh;
     padding: 0 23px 0 27px;
-    padding-top: 142px;
+    padding-top: 45px;
   }
   .people-warp{
     padding: 50px 38px 50px;

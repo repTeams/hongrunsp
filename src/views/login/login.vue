@@ -1,3 +1,8 @@
+<!--
+ * @Date: 2019-10-09 00:01:50
+ * @LastEditors: fashandian
+ * @LastEditTime: 2019-10-09 05:57:40
+ -->
 <template>
   <div class="login-main box">
     <ul class="login-warp">
@@ -14,8 +19,8 @@
       </li>
       <li class="login-btn">登录</li>
       <li class="box other-btn-warp">
-        <div>忘记密码</div>
-        <div>进入首页</div>
+        <div @click="goToPage('/forget')">忘记密码</div>
+        <div @click="goToPage('/login')">进入首页</div>
       </li>
     </ul>
   </div>
@@ -28,9 +33,8 @@ export default {
         return {};
     },
     methods: {
-        changeLand (tex) {
-            console.log(tex);
-            this.$i18n.locale = tex;
+        goToPage (path) {
+            this._jumpOtherUrl(path);
         }
     }
 };
@@ -39,7 +43,6 @@ export default {
   .login-main{
     justify-content: center;
     align-content: center;
-    height: 100vh;
     flex-direction: column;
   }
   .login-main .login-warp{

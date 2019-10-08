@@ -1,15 +1,15 @@
 <!--
  * @Date: 2019-10-08 22:34:07
  * @LastEditors: fashandian
- * @LastEditTime: 2019-10-09 00:20:35
+ * @LastEditTime: 2019-10-09 05:11:33
  -->
 <template>
     <div id="app">
         <div class="app-title-warp" v-show="showTitle">
-          <i class="iconleft iconfont" @click="comeBlack()"></i>
-          <span>{{getTitle}}</span>
+            <i class="iconleft iconfont" @click="comeBlack()"></i>
+            <span>{{getTitle}}</span>
         </div>
-        <router-view />
+        <router-view class="router-view" />
     </div>
 </template>
 
@@ -41,19 +41,22 @@ export default {
         overflow: hidden;
     }
     .app-title-warp{
-      line-height: 88px;
-      background: #ffffff;
-      position: absolute;
-      width: 100vw;
-      text-align: center;
-      font-size: 36px;
-      color: #333333;
-      border-bottom: 1px solid #ECECEC;
+        line-height: 88px;
+        background: #ffffff;
+        width: 100vw;
+        text-align: center;
+        font-size: 36px;
+        color: #333333;
+        border-bottom: 1px solid #ECECEC;
     }
     .app-title-warp .iconfont{
-      position: absolute;
-      left: 18px;
-      font-size: 50px;
-      font-weight: bold;
+        position: absolute;
+        left: 18px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .router-view {
+        height: calc(100vh - 88px) !important;
     }
 </style>

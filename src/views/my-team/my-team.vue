@@ -1,3 +1,8 @@
+<!--
+ * @Date: 2019-10-09 00:01:50
+ * @LastEditors: fashandian
+ * @LastEditTime: 2019-10-09 05:57:31
+ -->
 <template>
   <div class="my-team-main">
     <ul class="box top-title-warp">
@@ -11,11 +16,11 @@
       </li>
     </ul>
     <ul class="team-content-warp">
-      <li class="box team-content-item team-content-item-first">
+      <li class="box team-content-item team-content-item-first" @click="goToPage('/invitation')">
         <div class="team-content-item-key">邀请码</div>
         <i class="iconright iconfont team-content-item-icon"></i>
       </li>
-      <li class="box team-content-item">
+      <li class="box team-content-item" @click="goToPage('/detailed')">
         <div class="team-content-item-key">我的团队</div>
         <i class="iconright iconfont team-content-item-icon"></i>
       </li>
@@ -30,9 +35,8 @@ export default {
         return {};
     },
     methods: {
-        changeLand (tex) {
-            console.log(tex);
-            this.$i18n.locale = tex;
+        goToPage (path) {
+            this._jumpOtherUrl(path);
         }
     }
 };
@@ -41,9 +45,8 @@ export default {
   @import "../../static/css/top-title.css";
   .my-team-main{
     background: #F2F2F2;
-    min-height: 100vh;
     padding: 0 23px 0 27px;
-    padding-top: 142px;
+    padding-top: 38px;
   }
   .team-content-warp{
     margin-top: 41px;

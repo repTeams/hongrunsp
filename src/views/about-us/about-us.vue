@@ -1,3 +1,8 @@
+<!--
+ * @Date: 2019-10-09 00:01:50
+ * @LastEditors: fashandian
+ * @LastEditTime: 2019-10-09 00:01:50
+ -->
 <template>
   <div class="about-us-main">
     <ul class="abput-us-warp">
@@ -29,9 +34,6 @@ export default {
 };
 </script>
 <style land="scss">
-  .about-us-main{
-    padding-top: 88px;
-  }
   .about-us-img{
     width: 100%;
   }

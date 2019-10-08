@@ -22,7 +22,7 @@ const vueRouter = new Router({
             path: '/myCustomer',
             name: 'myCustomer',
             meta: {
-                title: '我的顾客'
+                title: '我的客户'
             },
             component: resolve => require(['@/views/my-customer'], resolve) // 路由懒加载
         },
@@ -127,7 +127,8 @@ const vueRouter = new Router({
             meta: {
                 title: '团队明细'
             },
-            component: resolve => require(['@/views/detailed/detailed'], resolve) // 路由懒加载
+            component: resolve =>
+                require(['@/views/detailed/detailed'], resolve) // 路由懒加载
         }
     ]
 });

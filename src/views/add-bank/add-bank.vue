@@ -1,7 +1,7 @@
 <!--
  * @Date: 2019-10-09 00:43:16
  * @LastEditors: fashandian
- * @LastEditTime: 2019-10-09 01:43:18
+ * @LastEditTime: 2019-10-09 05:12:05
  -->
 <template>
     <div class="add-bank-container">
@@ -37,7 +37,6 @@ export default {
 <style lang="scss">
     .add-bank-container {
         background: #f6f6f6;
-        height: 100vh;
         > p {
             padding: 20px 40px;
         }

@@ -1,11 +1,11 @@
 <!--
  * @Date: 2019-10-09 00:01:50
  * @LastEditors: fashandian
- * @LastEditTime: 2019-10-09 02:41:03
+ * @LastEditTime: 2019-10-09 05:56:27
  -->
 <template>
     <div class="presentation-container">
-        <div class="add-bank-wrap">
+        <div class="add-bank-wrap" @click="goToPage('/addBank')">
             <span>
                 <i class="iconfont iconbank icon-css icon-right-inside"></i>
                 点击添加银行卡
@@ -51,13 +51,17 @@ export default {
     name: 'Presentation',
     data () {
         return {};
+    },
+    methods: {
+        goToPage (path) {
+            this._jumpOtherUrl(path);
+        }
     }
 };
 </script>
 <style lang="scss">
     .presentation-container {
         background: #f6f6f6;
-        height: 100vh;
         padding-top: 20px;
         .add-bank-wrap {
             background: #fff;
