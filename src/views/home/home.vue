@@ -1,12 +1,12 @@
 <template>
   <div class="hello">
-    <h1>我这里是我的顾客的啦的啦</h1>
+    <h1>我这里是的啦</h1>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'myCustomer',
+    name: 'home',
     data () {
         return {};
     },

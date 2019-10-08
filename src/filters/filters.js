@@ -164,23 +164,7 @@ export function formatDeliverType (str) {
     if (str) {
         const arr = str.split(',');
         arr.forEach(item => {
-            if (item === '1') {
-                objArr.push({
-                    id: 1,
-                    name: this.$t('settlement.express')
-                });
-            }
-            /* else if (item == '2') {
-                objArr.push({
-                    id: 2,
-                    name: this.$t('settlement.self')
-                })
-            } else if (item == '3') {
-                objArr.push({
-                    id: 3,
-                    name: '就近配送'
-                })
-            } */
+
         });
     }
 
