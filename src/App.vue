@@ -5,6 +5,10 @@
  -->
 <template>
     <div id="app">
+        <div class="app-title-warp" v-show="showTitle">
+          <i class="iconleft iconfont" @click="comeBlack()"></i>
+          <span>{{getTitle}}</span>
+        </div>
         <router-view />
     </div>
 </template>
@@ -12,7 +16,21 @@
 <script>
 export default {
     name: 'App',
-    components: {}
+    components: {},
+    methods: {
+        comeBlack () {
+            this.$router.go(-1);
+        }
+    },
+    computed: {
+        getTitle () {
+            console.log(this.$route);
+            return this.$route.meta.title;
+        },
+        showTitle () {
+            return this.$route.meta.title !== '登录';
+        }
+    }
 };
 </script>
 
@@ -21,5 +39,21 @@ export default {
         background-size: 100%;
         min-height: 100vh;
         overflow: hidden;
+    }
+    .app-title-warp{
+      line-height: 88px;
+      background: #ffffff;
+      position: absolute;
+      width: 100vw;
+      text-align: center;
+      font-size: 36px;
+      color: #333333;
+      border-bottom: 1px solid #ECECEC;
+    }
+    .app-title-warp .iconfont{
+      position: absolute;
+      left: 18px;
+      font-size: 50px;
+      font-weight: bold;
     }
 </style>
