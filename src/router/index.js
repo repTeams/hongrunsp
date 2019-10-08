@@ -51,12 +51,12 @@ const vueRouter = new Router({
             component: resolve => require(['@/views/invitation/invitation'], resolve) // 路由懒加载
         },
         {
-            path: '/mySecond',
-            name: 'mySecond',
+            path: '/addBank',
+            name: 'addBank',
             meta: {
                 title: '我的团队'
             },
-            component: resolve => require(['@/views/my-second/my-second'], resolve) // 路由懒加载
+            component: resolve => require(['@/views/add-bank/add-bank'], resolve) // 路由懒加载
         },
         {
             path: '/myOrder',

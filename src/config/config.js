@@ -10,10 +10,14 @@ import * as filters from '../filters/filters.js'; // global filters
 import '@/static/css/reset.css';
 import '@/static/css/animated.css';
 import '@/static/css/common.scss';
+import '@/static/font/iconfont.css';
 // import '@/static/font/iconfont.css';
 import axios from 'axios';
 import router from '../router';
 import qs from 'qs';
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css';
+Vue.use(Mint);
 
 // import VueQArt from 'vue-qart'
 // Vue.use(VueQArt);
