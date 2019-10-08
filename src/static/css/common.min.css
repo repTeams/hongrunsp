@@ -1,0 +1,1 @@
+*{box-sizing:border-box;transition:all 0.3s}.float-left{float:left}.float-right{float:right}.clearfloat::after{display:block;content:'';clear:both}.icon-css{font-size:inherit !important}.icon-right-inside{margin-right:5px}.icon-left-inside{margin-left:5px}
