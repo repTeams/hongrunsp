@@ -10,14 +10,22 @@ Vue.use(Router);
 
 const vueRouter = new Router({
     routes: [
-        //     {
-        //     path: '/',
-        //     name: 'home',
-        //     meta: {
-        //         title: '首页'
-        //     },
-        //     component: resolve => require(['@/views/home/Home'], resolve) // 路由懒加载
-        // }
+        {
+            path: '/',
+            name: 'home',
+            meta: {
+                title: '首页'
+            },
+            component: resolve => require(['@/views/home/Home'], resolve) // 路由懒加载
+        },
+        {
+            path: '/myCustomer',
+            name: 'myCustomer',
+            meta: {
+                title: '我的顾客'
+            },
+            component: resolve => require(['@/views/my-customer'], resolve) // 路由懒加载
+        }
     ]
 });
 vueRouter.beforeEach((to, from, next) => {
