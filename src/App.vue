@@ -10,6 +10,20 @@
             <span>{{getTitle}}</span>
         </div>
         <router-view class="router-view" />
+        <ul class="box footer-nav-warp">
+          <li class="flex" @click="goToPage('home')">
+            <i class="iconbank iconfont"></i>
+            <div>首页</div>
+          </li>
+          <li class="flex" @click="goToPage('invitation')">
+            <i class="iconbank iconfont"></i>
+            <div>推广</div>
+          </li>
+          <li class="flex" @click="goToPage('mySelf')">
+            <i class="iconbank iconfont"></i>
+            <div>我的</div>
+          </li>
+        </ul>
     </div>
 </template>
 
@@ -20,6 +34,9 @@ export default {
     methods: {
         comeBlack () {
             this.$router.go(-1);
+        },
+        goToPage (path) {
+            this._jumpOtherUrl(path);
         }
     },
     computed: {
@@ -39,6 +56,20 @@ export default {
         background-size: 100%;
         min-height: 100vh;
         overflow: hidden;
+    }
+    .footer-nav-warp{
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
+      left: 0;
+      padding: 20px 0;
+      border-top: 1px solid #cccccc;
+      background: #fff;
+    }
+    .footer-nav-warp .iconfont{
+      font-size: 30px;
+      line-height: 50px;
     }
     .app-title-warp{
         line-height: 88px;

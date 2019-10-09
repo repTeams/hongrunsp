@@ -11,7 +11,7 @@
         </section>
         <ul class="content-container">
             <li>
-                <div class="customer-msg-wrap">
+                <div class="customer-msg-wrap" @click="goToPage('/presentation')">
                     <img src="../static/img/customer-icon.png" alt="客户头像">
                     <div>
                         <p class="name">客户001</p>
@@ -21,7 +21,7 @@
                 <p>3个/88元</p>
             </li>
             <li>
-                <div class="customer-msg-wrap">
+                <div class="customer-msg-wrap" @click="goToPage('/presentation')">
                     <img src="../static/img/customer-icon.png" alt="客户头像">
                     <div>
                         <p class="name">客户001</p>
@@ -31,7 +31,7 @@
                 <p>3个/88元</p>
             </li>
             <li>
-                <div class="customer-msg-wrap">
+                <div class="customer-msg-wrap" @click="goToPage('/presentation')">
                     <img src="../static/img/customer-icon.png" alt="客户头像">
                     <div>
                         <p class="name">客户001</p>
@@ -41,7 +41,7 @@
                 <p>3个/88元</p>
             </li>
             <li>
-                <div class="customer-msg-wrap">
+                <div class="customer-msg-wrap" @click="goToPage('/presentation')">
                     <img src="../static/img/customer-icon.png" alt="客户头像">
                     <div>
                         <p class="name">客户001</p>
@@ -50,7 +50,7 @@
                 </div>
                 <p>3个/88元</p>
             </li>
-            <li>
+            <li @click="goToPage('/presentation')">
                 <div class="customer-msg-wrap">
                     <img src="../static/img/customer-icon.png" alt="客户头像">
                     <div>
@@ -69,9 +69,12 @@ export default {
     name: 'MyCustomer',
     components: {},
     data () {
-        return {
-
-        };
+        return {};
+    },
+    methods: {
+        goToPage (path) {
+            this._jumpOtherUrl(path);
+        }
     }
 };
 </script>

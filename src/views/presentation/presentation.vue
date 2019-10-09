@@ -48,7 +48,7 @@
 
 <script>
 export default {
-    name: 'Presentation',
+    name: 'presentation',
     data () {
         return {};
     },

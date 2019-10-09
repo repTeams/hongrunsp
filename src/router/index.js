@@ -19,6 +19,14 @@ const vueRouter = new Router({
             component: resolve => require(['@/views/home/Home'], resolve) // 路由懒加载
         },
         {
+            path: '/home',
+            name: 'home',
+            meta: {
+                title: '首页'
+            },
+            component: resolve => require(['@/views/home/Home'], resolve) // 路由懒加载
+        },
+        {
             path: '/myCustomer',
             name: 'myCustomer',
             meta: {
@@ -129,6 +137,15 @@ const vueRouter = new Router({
             },
             component: resolve =>
                 require(['@/views/detailed/detailed'], resolve) // 路由懒加载
+        },
+        {
+            path: '/mySelf',
+            name: 'mySelf',
+            meta: {
+                title: '我的'
+            },
+            component: resolve =>
+                require(['@/views/mySelf/mySelf'], resolve) // 路由懒加载
         }
     ]
 });

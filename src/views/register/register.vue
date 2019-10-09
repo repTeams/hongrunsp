@@ -26,7 +26,7 @@
         <span class="register-tips">确认密码</span>
         <input class="user-input" type="text" placeholder="请确认密码">
       </li>
-      <li class="register-btn">
+      <li class="register-btn" @click="goToPage('/myCustomer')">
         确定
       </li>
     </ul>
@@ -43,6 +43,9 @@ export default {
         changeLand (tex) {
             console.log(tex);
             this.$i18n.locale = tex;
+        },
+        goToPage (path) {
+            this._jumpOtherUrl(path);
         }
     }
 };

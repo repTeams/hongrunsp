@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>我这里是的啦</h1>
+  <div class="home-main">
+    <img src="./img/home.jpg" alt="">
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 };
 </script>
 <style land="scss">
-  .active-block{
-    padding:10px;
+  .home-main{
+    overflow: scroll;
   }
 </style>

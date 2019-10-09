@@ -15,7 +15,7 @@
         <div class="top-content">直推台数</div>
       </li>
     </ul>
-    <ul class="people-warp box" v-for="item in 2" :key="item">
+    <ul class="people-warp box" v-for="item in 2" :key="item" @click="goToPage('/myCustomer')">
       <li>
         <img src="../../static/img/customer-icon.png" alt="">
       </li>
@@ -39,6 +39,9 @@ export default {
         changeLand (tex) {
             console.log(tex);
             this.$i18n.locale = tex;
+        },
+        goToPage (path) {
+            this._jumpOtherUrl(path);
         }
     }
 };

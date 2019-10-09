@@ -6,7 +6,7 @@
 <template>
     <div class="invitation-container">
         <div class="code-wrap">
-            <img src="../../static/img/customer-icon.png" alt="二维码">
+            <img src="../../static/img/code.png" alt="二维码">
             <p>我的邀请码：1273</p>
         </div>
     </div>

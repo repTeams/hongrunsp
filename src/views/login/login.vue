@@ -17,10 +17,10 @@
         <i class="iconpassword iconfont"></i>
         <input class="user-input" type="text" placeholder="请输入密码">
       </li>
-      <li class="login-btn">登录</li>
+      <li class="login-btn" @click="goToPage('/myTeam')">登录</li>
       <li class="box other-btn-warp">
         <div @click="goToPage('/forget')">忘记密码</div>
-        <div @click="goToPage('/login')">进入首页</div>
+        <div @click="goToPage('/register')">注册账号</div>
       </li>
     </ul>
   </div>
